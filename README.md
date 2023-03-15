@@ -82,7 +82,7 @@ async function createNewUser(config, { Email, FirstName, LastName }) {
     },
     // спрощено
   };
-  return Request.post('https://admin.googleapis.com/admin/directory/v1/users', user, {
+  return ITFinRequest.post('https://admin.googleapis.com/admin/directory/v1/users', user, {
     headers: {
       Authorization: `Bearer ${config.token}`
     }
